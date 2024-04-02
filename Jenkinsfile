@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "sudo docker build -t node-server1" 
+                sh "sudo docker build -t node-server1 ." 
             }
         }
         stage('Deploy') { 
